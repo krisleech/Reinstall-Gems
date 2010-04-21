@@ -20,3 +20,9 @@ Any gems not avalible via a remote source (rubygems etc.) will be uninstalled,
 but not installed. You will need to install these gems manually.
 
 It skips the mysql gem which needs special flags set to compile 64 bit code.
+
+Author: Kris Leech ("moc.tcenokretni@hceel.sirk".reverse)
+
+Recommend me on Working with Rails (http://workingwithrails.com/person/5149-kris-leech)
+
+Copyright (c) 2010 Kris Leech, released under the MIT license
