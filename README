@@ -1,0 +1,22 @@
+== ReInstall Gems
+
+This rake task re-installs all your gems, it installs all currently installed versions.
+
+I needed to do this when upgrading to MacOS 10.6 (Snow Leopard) as it is 64 bit
+and any compiled gems where compiled for 32 bit.
+
+It only reinstalls gems which make use of C extensions.
+
+"gem pristine -all" did not work for me.
+
+You will have to keep an eye on the output as the task does not log any errors
+during install, some uninstalls also include 'questions'.
+
+== Notes
+
+Gems are installed with 'sudo' so you will need to enter your password.
+
+Any gems not avalible via a remote source (rubygems etc.) will be uninstalled,
+but not installed. You will need to install these gems manually.
+
+It skips the mysql gem which needs special flags set to compile 64 bit code.
